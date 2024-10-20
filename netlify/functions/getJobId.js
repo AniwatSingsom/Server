@@ -1,3 +1,5 @@
+let jobData = null; // Use the same variable to store job data
+
 exports.handler = async function(event, context) {
     if (jobData) {
         return {
