@@ -1,8 +1,8 @@
 exports.handler = async function(event, context) {
-    if (global.jobData) {
+    if (jobData) {
         return {
             statusCode: 200,
-            body: JSON.stringify(global.jobData)
+            body: JSON.stringify(jobData)
         };
     } else {
         return {
